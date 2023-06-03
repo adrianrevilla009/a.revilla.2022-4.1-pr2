@@ -3,6 +3,7 @@ package es.urjc.code.daw.library.rest;
 import java.util.Collection;
 import java.util.Optional;
 
+import es.urjc.code.daw.library.Features;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.HttpStatus;
@@ -19,11 +20,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import es.urjc.code.daw.library.book.Book;
 import es.urjc.code.daw.library.book.BookService;
+import org.togglz.core.manager.FeatureManager;
 
 @RestController
 @RequestMapping("/api/books")
 public class BookRestController {
-
+	@Autowired
+	private FeatureManager featureManager;
 	@Autowired
 	private BookService service;
 
@@ -49,7 +52,13 @@ public class BookRestController {
 	@ResponseStatus(HttpStatus.CREATED)
 	public Book createBook(@RequestBody Book book) {
 
-		return service.save(book);
+		if (this.featureManager.isActive(Features.FEATURE_LINE_BREAKER)) {
+			System.out.println("Feature line breaker");
+
+			return new Book();
+		} else {
+			return service.save(book);
+		}
 	}
 
 	@PutMapping("/{id}")

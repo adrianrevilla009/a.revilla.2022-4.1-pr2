@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36c29509-b9f4-4b64-b74e-49b5fbaedf50" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/notification/NotificationAsyncPublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/book/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/notification/NotificationAsyncService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/notification/NotificationAsyncService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/notification/NotificationEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/notification/NotificationEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/rest/BookRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/rest/BookRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/es/urjc/code/daw/library/unitary/BookServiceUnitaryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/urjc/code/daw/library/unitary/BookServiceUnitaryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,23 +127,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/rest/BookRestController.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/rest/BookRestController.java</url>
-          <line>59</line>
+          <line>53</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/book/BookService.java</url>
-          <line>48</line>
+          <line>66</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/book/BookService.java</url>
-          <line>50</line>
+          <line>68</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/book/BookService.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/book/BookService.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

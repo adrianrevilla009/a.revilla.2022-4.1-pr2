@@ -51,14 +51,7 @@ public class BookRestController {
 	@PostMapping("/")
 	@ResponseStatus(HttpStatus.CREATED)
 	public Book createBook(@RequestBody Book book) {
-
-		if (this.featureManager.isActive(Features.FEATURE_LINE_BREAKER)) {
-			System.out.println("Feature line breaker");
-
-			return new Book();
-		} else {
-			return service.save(book);
-		}
+		return service.save(book);
 	}
 
 	@PutMapping("/{id}")

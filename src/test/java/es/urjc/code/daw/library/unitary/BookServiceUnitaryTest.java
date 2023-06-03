@@ -6,6 +6,7 @@ import static org.mockito.Mockito.when;
 
 import es.urjc.code.daw.library.Features;
 import es.urjc.code.daw.library.notification.NotificationAsyncPublisher;
+import es.urjc.code.daw.library.services.LineBreaker;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -27,6 +28,8 @@ public class BookServiceUnitaryTest {
 
     private NotificationAsyncPublisher notificationAsyncPublisher;
 
+    private LineBreaker lineBreaker;
+
     @BeforeEach
 	public void setup() {
         
@@ -34,8 +37,9 @@ public class BookServiceUnitaryTest {
         notificationService = mock(NotificationService.class);
         featureManager = mock(FeatureManager.class);
         notificationAsyncPublisher = mock(NotificationAsyncPublisher.class);
+        lineBreaker = mock(LineBreaker.class);
         bookService = new BookService(repository, notificationService, featureManager,
-                notificationAsyncPublisher);
+                notificationAsyncPublisher, lineBreaker);
 			
     }
 

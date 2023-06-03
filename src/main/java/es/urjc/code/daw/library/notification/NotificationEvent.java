@@ -10,4 +10,7 @@ public class NotificationEvent extends ApplicationEvent {
         this.message = message;
     }
 
+    public String getMessage() {
+        return message;
+    }
 }

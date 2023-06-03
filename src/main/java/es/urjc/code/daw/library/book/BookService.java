@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import es.urjc.code.daw.library.Features;
+import es.urjc.code.daw.library.notification.NotificationAsyncPublisher;
 import org.springframework.stereotype.Service;
 
 import es.urjc.code.daw.library.notification.NotificationService;
@@ -20,11 +21,14 @@ public class BookService {
 
 	private FeatureManager featureManager;
 
+	private NotificationAsyncPublisher notificationAsyncPublisher;
+
 	public BookService(BookRepository repository, NotificationService notificationService,
-					   FeatureManager featureManager){
+					   FeatureManager featureManager, NotificationAsyncPublisher notificationAsyncPublisher){
 		this.repository = repository;
 		this.notificationService = notificationService;
 		this.featureManager = featureManager;
+		this.notificationAsyncPublisher = notificationAsyncPublisher;
 	}
 
 	public Optional<Book> findOne(long id) {
@@ -42,9 +46,9 @@ public class BookService {
 	public Book save(Book book) {
 		Book newBook = repository.save(book);
 		if (this.featureManager.isActive(Features.FEATURE_EVENT_NOTIFICATION)) {
-			System.out.println("Feature event notification");
+			notificationAsyncPublisher.sendNotification("[2] Book Async Event: book with title=" + newBook.getTitle() + " was created");
 		} else {
-			notificationService.notify("Book Event: book with title=" + newBook.getTitle() + " was created");
+			notificationService.notify("[1] Book Event: book with title=" + newBook.getTitle() + " was created");
 		}
 		return newBook;
 	}
@@ -52,9 +56,9 @@ public class BookService {
 	public void delete(long id) {
 		repository.deleteById(id);
 		if (this.featureManager.isActive(Features.FEATURE_EVENT_NOTIFICATION)) {
-			System.out.println("Feature event notification");
+			notificationAsyncPublisher.sendNotification("[2] Book Async Event: book with id=" + id + " was deleted");
 		} else {
-			notificationService.notify("Book Event: book with id=" + id + " was deleted");
+			notificationService.notify("[1] Book Event: book with id=" + id + " was deleted");
 		}
 	}
 }

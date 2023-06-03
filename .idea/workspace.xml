@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36c29509-b9f4-4b64-b74e-49b5fbaedf50" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/notification/NotificationAsyncService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/notification/NotificationEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/notification/NotificationAsyncPublisher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/book/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/notification/NotificationAsyncService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/notification/NotificationAsyncService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/notification/NotificationEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/notification/NotificationEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/urjc/code/daw/library/unitary/BookServiceUnitaryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/urjc/code/daw/library/unitary/BookServiceUnitaryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,12 +141,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/book/BookService.java</url>
-          <line>44</line>
+          <line>48</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/book/BookService.java</url>
-          <line>46</line>
+          <line>50</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>

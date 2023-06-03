@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36c29509-b9f4-4b64-b74e-49b5fbaedf50" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/Features.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/rest/BookRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/rest/BookRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/Features.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/Features.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/book/BookService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/urjc/code/daw/library/unitary/BookServiceUnitaryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/urjc/code/daw/library/unitary/BookServiceUnitaryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +45,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Proyects/master/Modulo4/2-booksAppTrunkBasedDevelopment/src/main/java/es/urjc/code/daw/library"
   }
 }]]></component>
@@ -135,6 +136,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/rest/BookRestController.java</url>
           <line>59</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/book/BookService.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/es/urjc/code/daw/library/book/BookService.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
